@@ -24,8 +24,8 @@ export const JugadoresSorteo = () => {
   const renderSorteado = players.map((player)=>{
     return(
         <div key={player.id}>
-            <p>{player.jugador}</p>
-            <p>{player.id}</p>
+            <p>Jugador: {player.jugador}</p>
+            <p>ID: {player.id}</p>
         </div>
         )
     })
