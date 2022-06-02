@@ -1,18 +1,23 @@
 import './App.css';
 import { JugadoresSorteo } from "../src/componentes/jugadores"
 
+const initialPlayers = [
+  {jugador: "Emma", id: 1},
+  {jugador: "Brian", id: 2},
+  {jugador: "Roswel", id: 3},
+  {jugador: "Neger", id: 4},
+  {jugador: "Beto", id: 5},
+  {jugador: "Gaby", id: 6}
+];
+
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
         <div>
-        <JugadoresSorteo/>
+        <JugadoresSorteo initialPlayers={initialPlayers}/>
         </div>
-        <a className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">Learn React</a>
       </header>
     </div>
   );
