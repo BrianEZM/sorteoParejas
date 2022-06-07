@@ -1,4 +1,18 @@
 .boton {
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+.boton:hover {
+    background-color: rgba(18, 18, 61, 0.631);
+    color: darkgrey;
+}
+
+.dupla {
+    border: .5rem solid rgba(19, 18, 18, 0.818);
+    margin-bottom: .2rem;
+    font-family: sans-serif;
+    text-align: start;
+    padding: .3rem;
 }

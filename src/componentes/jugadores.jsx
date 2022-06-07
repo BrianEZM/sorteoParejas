@@ -10,27 +10,44 @@ export const JugadoresSorteo = ({initialPlayers}) => {
   const mezclar = () => {
 
     setPlayers(initialPlayers.sort(()=> Math.round(Math.random())-1));
-    console.log(players);
     setVisible(false);
     setReset(true);
-
   }
+
+    let pareja1 = [players[0], players[1]];
+    let pareja2 = [players[2], players[3]];
+    let pareja3 = [players[4], players[5]];
 
   const volver = () => {
       setReset(false);
       setVisible(true)
   }
 
+//   RENDERIZADO
     return(
         <>
             {visible ? 
             <button onClick={mezclar} className="boton">Sortear</button>
             :
-            players.map((player)=>{
-
+            pareja1.map((player)=>{
                 return(
-                    <div key={player.id}>
-                        <p>Jugador: {player.jugador}</p>
+                    <div className='dupla' key={player.id}>
+                        <p>Pareja 1: {player.jugador}</p>
+                    </div>
+                    )
+                })
+                }
+            {!visible && pareja2.map((player)=>{
+                return(
+                    <div className='dupla' key={player.id}>
+                        <p>Pareja 2: {player.jugador}</p>
+                    </div>
+                    )
+                })}
+            {!visible && pareja3.map((player)=>{
+                return(
+                    <div className='dupla' key={player.id}>
+                        <p>Pareja 3: {player.jugador}</p>
                     </div>
                     )
                 })}
