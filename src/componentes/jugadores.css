@@ -1,6 +1,6 @@
 .boton {
-    padding: 2rem;
-    font-size: 2.5rem;
+    padding: 1rem;
+    font-size: 2.1rem;
     font-family: sans-serif;
 }
 
@@ -10,9 +10,14 @@
 }
 
 .dupla {
-    border: .5rem solid rgba(19, 18, 18, 0.818);
-    margin-bottom: .2rem;
+    background-color: rgba(14, 101, 14, 0.693);
+    border: .4rem solid rgba(19, 18, 18, 0.818);
+    margin-bottom: .1rem;
     font-family: sans-serif;
     text-align: start;
-    padding: .3rem;
+    padding: .2rem;
+}
+
+.dupla p {
+    text-align: center;
 }
