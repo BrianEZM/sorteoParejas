@@ -17,6 +17,7 @@ export const JugadoresSorteo = ({initialPlayers}) => {
 
     let pareja1 = [players[0], players[1]];
     let pareja2 = [players[2], players[3]];
+    let pareja3 = [players[4]];
     // let pareja3 = [players[4], players[5]];
 
     
@@ -54,6 +55,14 @@ export const JugadoresSorteo = ({initialPlayers}) => {
                 }
             <h3>Cancha 2</h3>
             {!visible && pareja2.map((player)=>{
+                return(
+                    <div className='dupla' key={player.id}>
+                        <p>{player.jugador}</p>
+                    </div>
+                    )
+                })}
+            <h3>Esperan afuera</h3>
+            {!visible && pareja3.map((player)=>{
                 return(
                     <div className='dupla' key={player.id}>
                         <p>{player.jugador}</p>
